@@ -11,7 +11,7 @@ console.log(elList);
 
 if (!LocalData) {
   location.replace("login.html");
-  location.reload();
+//   location.reload();
 }
 logOut.addEventListener("click",(evt)=>{
     localStorage.removeItem("token")
