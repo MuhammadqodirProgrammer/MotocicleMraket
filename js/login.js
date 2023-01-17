@@ -19,7 +19,7 @@ elform.addEventListener("submit", (evt) => {
     evt.preventDefault();
     console.dir(elEmailInput.value);
     console.log();
-    fetch("http://localhost:5000/user/login", {
+    fetch("http://10.10.2.250:5000/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

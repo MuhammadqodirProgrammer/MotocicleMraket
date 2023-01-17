@@ -8,7 +8,7 @@ const elPasInput = document.querySelector(".js-password");
 elform.addEventListener("submit", (evt) => {
   evt.preventDefault();
   console.log("bosildi");
-  fetch("http://localhost:5000/user/register", {
+  fetch("http://10.10.2.250:5000/user/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -31,30 +31,7 @@ location.replace("index.html")
     .catch((err) => console.log(err));
 });
 
-console.log(elform);
-// elform.addEventListener("submit", function (evt) {
-//   evt.preventDefault();
-//   fetch("http://10.10.2.250:5000/user/register", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify({
-//       user_name: elNameInput.value,
-//       phone: elPhoneInput.value,
-//       email: elEmailInput.value,
-//       password: elPasInput.value,
-//     }),
-//   })
-//     .then((res) => res.json())
-//     .then((data) => {
-//       if(data){
-//         localStorage.setItem("token" ,data.token)
-//         location.replace("index.html")
-//       }
-//     })
-//     .catch((err) => console.log(err));
-// });
+
 // Eye ===========================
 const elpasbtn = document.querySelector(".js-eye");
 
@@ -68,16 +45,4 @@ elpasbtn.addEventListener("click", (evt) => {
   console.dir(elPasInput);
 });
 
-// BackgroundColor ========================
 
-//  const elBody =document.querySelector('body')
-// const elText =document.querySelectorAll('.h1')
-// console.log(elText);
-// let color;
-// setInterval(()=>{
-//     const random = Math.floor(Math.random() * 200) + 1
-//     color =random + 36
-//     elBody.style.backgroundColor = 'hsl('+ random +',55%,50%)'
-//     elText[0].style.color = 'hsl('+ color +',25%,50%)'
-
-// },4000)

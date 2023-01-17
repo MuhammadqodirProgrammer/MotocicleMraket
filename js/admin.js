@@ -96,33 +96,8 @@ const delataTodo =(id)=>{
     })
     .catch((err) => console.log(err))
 }
-// // // Todo larni edit qilish uchun ==========
 
-// const editTodo =(id) =>{
-//     const elFile = elInputFile.files[0] ;
-//     const fd = new FormData();
-//     fd.append('product_name', elInputName.value);
-//     fd.append('product_desc', elInputDesc.value);
-//   fd.append('product_img', elFile);
-//   fd.append('product_price', elInputPrece.value);
 
-//     const newText =prompt("Yangi todo ni kiriting")
-//     fetch(`http://10.10.2.250:5000/todo/${id}`,{
-//         method:"PUT",
-//         headers:{
-//             // "Content-Type":"application/json",
-//             token: LocalData,
-//         },
-//         body:JSON.stringify({
-//             text:fd,
-//         })
-//     }).then((res)=> res.json()).then((data) => {
-//         if(data){
-//             getTodos()
-//         };
-//     }).catch((err) => console.log(err))
-
-// }
 const elbody =document.querySelector('body')
 elList.addEventListener("click",(evt)=>{
 if(evt.target.matches(".js-delete")){
@@ -137,4 +112,3 @@ delataTodo(todoId)
 // editTodo(todoId)
 // }
 })
-// body.classlist
