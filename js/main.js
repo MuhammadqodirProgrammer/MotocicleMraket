@@ -22,12 +22,12 @@ const renderProduct = (arr, node) => {
     node.innerHTML = "";
     arr.forEach((el) => {
       node.innerHTML += `
-      <div class="card mx-3 mb-4 shadow" style="width: 18rem;">
+      <div class="card mx-4  mb-4 shadow" style="width: 18rem;">
     <img src="http://10.10.2.250:5000/${el.product_img}" class="card-img-top" alt="..." width="285" height="285">
     <div class="card-body">
       <h5 class="card-title">${el.product_name}</h5>
       <p class="card-text">${el.product_desc}</p>
-      <p class="card-text">${el.product_price}</p>
+      <p class="card-text">${el.product_price}$</p>
 
     </div>
   </div>
