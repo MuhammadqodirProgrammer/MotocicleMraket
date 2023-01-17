@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+      li {
+        list-style-type: none;
+
+      }
+
+      /* body {
+        background-image: url(./images/iphone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw !important;
+        height: 100vh !important;
+        background-size: cover;
+      } */
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container-fluid ">
+      <div class="row">
+
+        <div class="col-2  admin-aside">
+          <h2 class="h2 py-3 text-center ">Logo</h2>
+          <div class=" d-flex flex-column justify-content-center justify-content-center ">
+            <button class="d-flex flex-wrap  mb-3 align-items-center mx-auto  admin_btn">
+              <a href="#"><img src="./images/phone-solid.svg" alt="img" width="25"></a>
+              <a href="#">Order</a>
+            </button>
+            <button class="d-flex flex-wrap  mb-3 align-items-center mx-auto  admin_btn">
+              <a href="#"><img src="./images/list-solid.svg" alt="img" width="25"></a>
+              <a href="#">Category</a>
+            </button>
+            <button class="d-flex flex-wrap  mb-3 align-items-center  mx-auto admin_btn">
+              <a href="#"><img src="./images/toolbox-solid.svg" alt="img" width="25"></a>
+              <a href="#">Prodact</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-10 main-admin">
+          <div class="   d-flex align-items-center justify-content-between px-2 pt-3 "
+            style="background-color: orange;">
+            <h2 class="h2 ">Admin header</h2>
+            <a href="./index.html"><button class="btn btn-primary ">Main</button></a>
+          </div>
+
+          <button type="button" class="btn btn-primary mt-3 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">ADD PRODUCT + </button>
+          <hr>
+
+          <div class="d-flex flex-wrap align-items-center px-2 ">
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content ">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body js-form">
+                    <form class="">
+                      <div class="mb-3">
+                        <input type="text" class="form-control js-productName" id="product-name" value="CAR"
+                          placeholder="Product name" name="product_name">
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" class="form-control js-productDesc" id="product-desc" value="CAR"
+                          placeholder="Product name" name="product_desc">
+                      </div>
+                      <div class="mb-3">
+                        <!-- <label for="message-text" class="col-form-label">Product descreption:</label>
+          <textarea class="form-control js-productDesc"  id="message-text"></textarea>
+        </div> -->
+                        <div class="mb-3">
+                          <input type="file" class="js-input js-productFile" accept="image/*" name="neededimage"
+                            id="file" name="product_img" />
+                        </div>
+                        <div class="mb-3">
+                          <input type="number" class="form-control js-productPrece" value="100$" id="product_price"
+                            placeholder="Product price" name="product_price">
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary js-add" data-bs-dismiss="modal">Send
+                          message</button>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="d-flex flex-wrap align-items-center px-2 js-list">
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="./js/admin.js"></script>
+  </body>
+
+</html>

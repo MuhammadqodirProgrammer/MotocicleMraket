@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #header{
+    height: 80px;
+    background-color: blue;
+} */
+.hero_container{
+    background-color: rgb(20, 54, 207);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slick-div{
+    /* min-height: calc( 100vh - 60px); */
+    height: 100vh;
+}
+/* .hero{
+    min-height: calc( 100vh - 60px);
+} */
+.corusel_slik-div{
+    background-repeat: no-repeat;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+}
+ h3{
+    
+    margin-top: 50px;
+    margin-left: 30px;
+}
+a{
+    text-decoration: none;
+
+}
+.admin-aside{
+    background-color: #FF8C00;
+    height: 100vh;
+}
+/* .main-admin{
+    
+    background-color:#00008B ;
+} */
+.row>*{
+    padding-left: 0;
+    padding-right: 0;
+}
+.admin_btn{
+     width: 150px;
+    height: 40px; 
+    /* padding:10px 20px; */
+    background-color: #fff;
+    border-radius: 5px 5px;
+    border: 1px solid transparent;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: space; */
+    
+}
+.admin_btn a{
+    color: black;
+}
+
+/* ============== Main Page */
+
+
